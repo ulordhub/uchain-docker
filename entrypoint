@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+/UlordChain/src/ulordd -daemon &
+
+tail -f /dev/null
+
+exec "$@";
+
+
+
