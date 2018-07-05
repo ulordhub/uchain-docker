@@ -35,7 +35,6 @@ RUN cd UlordChain \
     && make
 
 EXPOSE 19887
-EXPOSE 19888
 EXPOSE 19889
 
 ADD entrypoint /

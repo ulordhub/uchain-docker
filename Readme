@@ -1,1 +1,5 @@
-docker run -d -p 19887:19887 -p 19888:19888 -p 19889:19889 --name ulord -v /data/ulordcore:/root/.ulordcore ulord:latest
+## build
+docker build -t ulord .
+
+## run
+docker run -d -p 19887:19887 -p 19889:19889 --name ulord -v /data/ulordcore:/root/.ulordcore ulord
