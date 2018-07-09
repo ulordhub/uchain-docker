@@ -3,7 +3,7 @@ version: '3'
 services:
   daemon:
     build: .
-    image: ulord:lastest
+    image: ulord:master
     container_name: ulord
     volumes:
       - ./ulordcore:/root/.ulordcore
