@@ -32,3 +32,6 @@ Docker-compose 一键部署
 
 * 导入钱包
  请将 `wallet.dat` 放入 `./ulordcore/` 下面
+
+# 问题
+本环境跑在ubuntu 16.04, 如果其他系统存在问题请提下issue, 谢谢!
