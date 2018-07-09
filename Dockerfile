@@ -29,7 +29,7 @@ RUN add-apt-repository ppa:bitcoin/bitcoin \
     libdb4.8++-dev \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/UlordChain/UlordChain.git
+RUN git clone https://github.com/UlordChain/UlordChain.git --depth=1
 
 RUN cd UlordChain \
     && ./autogen.sh \
