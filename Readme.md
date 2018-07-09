@@ -12,7 +12,12 @@ dockerfile 手动部署
 # docker 部署方式二
 Docker-compose 一键部署
 
+* 启动
 `docker-compose up -d`
+
+* 停止
+`docker-compose down`
+
 
 # 其他
 * RPC
