@@ -1,3 +1,7 @@
+# docker 安装
+ubuntu 16.04 64位安装方法:
+https://docs.docker.com/install/linux/docker-ce/ubuntu
+
 # docker 部署方式一
 dockerfile 手动部署
 * 编译
