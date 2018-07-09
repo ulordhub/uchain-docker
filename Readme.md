@@ -1,4 +1,5 @@
-# ulord docker 部署方法
+# docker 部署方式一
+dockerfile 手动部署
 ## 编译
 `docker build -t ulord:master .`
 
@@ -8,7 +9,8 @@
 ## 停止
 `docker stop ulord`
 
-# 使用docker-compose 一键部署
+# docker 部署方式二
+Docker-compose 一键部署
 `docker-compose up -d`
 
 # 其他
