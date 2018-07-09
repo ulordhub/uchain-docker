@@ -17,7 +17,8 @@ RUN apt-get update \
     libboost-program-options-dev \
     libboost-test-dev \
     libboost-thread-dev \
-    git-core
+    git-core \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN add-apt-repository ppa:bitcoin/bitcoin \
     && apt-get update \
@@ -25,14 +26,15 @@ RUN add-apt-repository ppa:bitcoin/bitcoin \
     libminiupnpc-dev \
     libdb4.8-dev \
     libzmq3-dev \
-    libdb4.8++-dev
+    libdb4.8++-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/UlordChain/UlordChain.git
 
 RUN cd UlordChain \
     && ./autogen.sh \
     && ./configure \
-    && make
+    && make -j 4
 
 EXPOSE 19887
 EXPOSE 19889
