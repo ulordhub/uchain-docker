@@ -1,22 +1,19 @@
 # ulord docker 部署方法
 ## 编译
-docker build -t ut/ulord .
+`docker build -t ulord:master .`
 
 ## 运行
-docker run -d -p 19887:19887 -p 19889:19889 --name ulord -v ./ulordcore:/root/.ulordcore ut/ulord
+`docker run -d -p 19887:19887 -p 19889:19889 --name ulord -v ./ulordcore:/root/.ulordcore ulord:master`
 
 ## 停止
-docker stop ulord
+`docker stop ulord`
 
 # 使用docker-compose 一键部署
-`docker-compose up`
+`docker-compose up -d`
 
 # 其他
 * RPC
  rpc 端口 19887
-
-* 进入docker
- `docker exec -it ulord /bin/bash`
 
 * 查看日志
  `sudo tail -f ./ulordcore/debug.log`

@@ -4,8 +4,9 @@ services:
   daemon:
     build: .
     image: ulord:lastest
+    container_name: ulord
     volumes:
-      - /data/ulordcore:/root/.ulordcore
+      - ./ulordcore:/root/.ulordcore
     ports:
       - "19889:19889"
       - "19887:19887"
