@@ -11,6 +11,7 @@ dockerfile 手动部署
 
 # docker 部署方式二
 Docker-compose 一键部署
+
 `docker-compose up -d`
 
 # 其他
