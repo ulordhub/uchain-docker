@@ -27,14 +27,11 @@ RUN add-apt-repository ppa:bitcoin/bitcoin \
     libdb4.8-dev \
     libzmq3-dev \
     libdb4.8++-dev \
+    wget \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/UlordChain/UlordChain.git --depth=1
+RUN wget https://github.com/UlordChain/UlordChain/releases/download/Version-1-0-0/ulordchain_ubuntu_v_1_0_0.tar.gz && tar xvf ulordchain_ubuntu_v_1_0_0.tar.gz
 
-RUN cd UlordChain \
-    && ./autogen.sh \
-    && ./configure \
-    && make -j 4
 
 EXPOSE 19887
 EXPOSE 19889

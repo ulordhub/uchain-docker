@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-/UlordChain/src/ulordd -daemon &
+/ulordd -daemon &
 
 tail -f /dev/null
 
