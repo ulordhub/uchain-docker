@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 
 services:
   daemon:
@@ -10,3 +10,7 @@ services:
     ports:
       - "19889:19889"
       - "19887:19887"
+
+networks:
+  chain-net:
+    driver: bridge
