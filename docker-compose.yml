@@ -3,6 +3,7 @@ version: '2'
 services:
   daemon:
     build: .
+    restart: always
     image: ulord:master
     container_name: ulord
     volumes:
