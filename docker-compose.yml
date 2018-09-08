@@ -4,7 +4,7 @@ services:
   uchain:
     build: .
     restart: always
-    image: uchain:1.1.1
+    image: uchain:1.1.2
     container_name: uchain
     volumes:
       - ./ulordcore:/root/.ulordcore
