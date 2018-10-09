@@ -30,8 +30,8 @@ RUN add-apt-repository ppa:bitcoin/bitcoin \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://github.com/UlordChain/UlordChain/releases/download/V.1.1.2/ulordchain-ubuntu-v-1-1-2.tar.gz && \
-    tar xvf ulordchain-ubuntu-v-1-1-2.tar.gz 
+RUN wget https://github.com/UlordChain/UlordChain/releases/download/Version-1-1-4/ulordchain-ubuntu-v-1-1-4.tar.gz && \ 
+    tar xvf ulordchain-ubuntu-v-1-1-4.tar.gz 
 
 EXPOSE 19887
 EXPOSE 19889
